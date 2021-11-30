@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gallery</title>
+	<style>
+		 img{
+		 	height: 200px;
+		 	width: 290px;
+		 }
+		 h1{
+		 	color: yellow;
+		 }
+	</style>
+</head>
+<body bgcolor="#5D6D7E">
+	<center><h1><u>सुन चाँदी र आभूषण को केही फोटो हरू</u></h1></center>
+	{% for i in task %}
+	<img src="{{i.image.url}}" >
+	
+{% endfor %}
+</body>
+</html>
